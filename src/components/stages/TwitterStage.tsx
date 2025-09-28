@@ -30,56 +30,104 @@ export const TwitterStage = ({ onNext }: TwitterStageProps) => {
         </div>
 
         <div className="space-y-8">
-          <p className="text-xl md:text-2xl text-gray-700 leading-relaxed">
-            It all began on Twitter… I was just shitposting as usual 😂 
-            <br />and then you replied.
+          <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed font-medium">
+            It all began with this tweet… 💫
           </p>
 
-          {/* Mock Tweet */}
+          {/* Original Tweet */}
           {showTweet && (
-            <div className="bg-white rounded-xl p-6 shadow-xl max-w-md mx-auto animate-bubble-in">
-              <div className="flex items-start gap-3">
-                <div className="w-10 h-10 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full flex items-center justify-center">
-                  <span className="text-white font-bold text-sm">F</span>
+            <div className="bg-card rounded-2xl p-6 shadow-2xl max-w-lg mx-auto animate-fade-in border border-border/50 backdrop-blur-sm">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-lg">
+                  <span className="text-white font-bold text-lg">T</span>
                 </div>
                 <div className="flex-1">
-                  <div className="flex items-center gap-2 mb-2">
-                    <span className="font-bold text-gray-900">Favour</span>
-                    <span className="text-gray-500 text-sm">@favour_tech</span>
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="font-bold text-foreground text-lg">Tech_nurse</span>
+                    <div className="w-5 h-5 bg-blue-500 rounded-full flex items-center justify-center">
+                      <span className="text-white text-xs">✓</span>
+                    </div>
+                    <span className="text-muted-foreground text-sm">@favour_bode · 11 Aug</span>
                   </div>
-                  <p className="text-gray-800">Just another day of tech chaos and random thoughts 🤷‍♂️</p>
-                  <div className="flex items-center gap-4 mt-3 text-gray-500">
-                    <MessageSquare size={16} />
-                    <Heart size={16} />
+                  <p className="text-foreground text-lg leading-relaxed mb-4">
+                    one girl just sent me 500k for being so tall<br />
+                    i don die 😂😂
+                  </p>
+                  <div className="flex items-center gap-6 text-muted-foreground">
+                    <div className="flex items-center gap-2 hover:text-blue-500 transition-colors cursor-pointer">
+                      <MessageSquare size={18} />
+                      <span className="text-sm">2</span>
+                    </div>
+                    <div className="flex items-center gap-2 hover:text-red-500 transition-colors cursor-pointer">
+                      <Heart size={18} />
+                      <span className="text-sm">9</span>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           )}
 
-          {/* Reply */}
+          {/* First Reply */}
           {showReply && (
-            <div className="relative">
+            <div className="relative space-y-6">
               <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                <Heart className="text-pink-400 animate-pulse-heart" size={24} />
+                <Heart className="text-pink-500 animate-pulse-heart" size={32} />
               </div>
-              <div className="bg-pink-50 border-2 border-pink-200 rounded-xl p-6 shadow-xl max-w-md mx-auto animate-bubble-in">
-                <div className="flex items-start gap-3">
-                  <div className="w-10 h-10 bg-gradient-to-r from-pink-400 to-purple-400 rounded-full flex items-center justify-center">
-                    <span className="text-white font-bold text-sm">T</span>
+              
+              {/* Duchess Reply */}
+              <div className="bg-gradient-to-br from-pink-50 to-purple-50 border-2 border-pink-200/60 rounded-2xl p-6 shadow-2xl max-w-lg mx-auto animate-scale-in backdrop-blur-sm">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-gradient-to-br from-pink-500 to-purple-500 rounded-full flex items-center justify-center shadow-lg">
+                    <span className="text-white font-bold text-lg">D</span>
                   </div>
                   <div className="flex-1">
-                    <div className="flex items-center gap-2 mb-2">
-                      <span className="font-bold text-gray-900">Tomi</span>
-                      <span className="text-gray-500 text-sm">@duchess_tomi</span>
+                    <div className="flex items-center gap-2 mb-3">
+                      <span className="font-bold text-foreground text-lg">theduchessofnursing</span>
+                      <span className="text-muted-foreground text-sm">@duchesso... · 11 Aug</span>
                     </div>
-                    <p className="text-gray-800">This is so relatable! Tech life is wild 😂</p>
+                    <p className="text-gray-800 text-lg leading-relaxed mb-2">
+                      Replying to <span className="text-blue-500">@favour_bode</span>
+                    </p>
+                    <p className="text-foreground text-lg leading-relaxed">
+                      nursing students and fooling💔
+                    </p>
                   </div>
                 </div>
               </div>
-              <p className="text-lg text-center mt-6 text-pink-600 font-medium">
-                That one simple reply pulled me into your DMs… 💕
-              </p>
+
+              {/* Your Reply */}
+              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 border-2 border-blue-200/60 rounded-2xl p-6 shadow-2xl max-w-lg mx-auto animate-scale-in backdrop-blur-sm">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center shadow-lg">
+                    <span className="text-white font-bold text-lg">T</span>
+                  </div>
+                  <div className="flex-1">
+                    <div className="flex items-center gap-2 mb-3">
+                      <span className="font-bold text-foreground text-lg">Tech nurse</span>
+                      <div className="w-5 h-5 bg-blue-500 rounded-full flex items-center justify-center">
+                        <span className="text-white text-xs">✓</span>
+                      </div>
+                      <span className="text-muted-foreground text-sm">@favour_bode</span>
+                    </div>
+                    <p className="text-gray-800 text-lg leading-relaxed mb-2">
+                      Replying to <span className="text-pink-500">@duchessofnsg</span>
+                    </p>
+                    <p className="text-foreground text-xl font-bold leading-relaxed">
+                      FOOLING IS A CALLING 🔥🙏
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="text-center">
+                <p className="text-2xl font-bold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent leading-relaxed">
+                  And that's how our story began... 💕✨
+                </p>
+                <p className="text-lg text-muted-foreground mt-2 font-medium">
+                  One tweet, one reply, infinite love
+                </p>
+              </div>
             </div>
           )}
         </div>
