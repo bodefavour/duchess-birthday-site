@@ -42,15 +42,15 @@ const LoveStory = () => {
       )}
 
       {/* Progress Indicator */}
-      <div className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50">
-        <div className="flex gap-2 bg-white/80 backdrop-blur-sm rounded-full px-4 py-2 shadow-lg">
+      <div className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50">
+        <div className="progress-pill flex gap-3 px-6 py-3 rounded-full shadow-2xl">
           {stages.map((_, index) => (
             <div
               key={index}
-              className={`w-3 h-3 rounded-full transition-all duration-300 ${
+              className={`w-4 h-4 rounded-full transition-all duration-500 ${
                 index <= currentStage 
-                  ? 'bg-gradient-to-r from-pink-400 to-purple-400' 
-                  : 'bg-gray-200'
+                  ? 'bg-gradient-to-r from-pink-500 to-purple-500 shadow-lg transform scale-110' 
+                  : 'bg-gray-300'
               }`}
             />
           ))}
