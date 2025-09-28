@@ -17,30 +17,35 @@ export const DMsStage = ({ onNext }: DMsStageProps) => {
   const [typing, setTyping] = useState<null | "favour" | "tomi">(null);
 
   const chatMessages: ChatMessage[] = [
-    { sender: "favour", text: "DUCHESS OF NURSINGGGG!! 🔥", delay: 1000 },
-    { sender: "favour", text: "It’s an honor to get into your DM ma 🙏🏽", delay: 2500 },
-    { sender: "tomi", text: "hello, cheat 💔", delay: 4000 },
-    { sender: "favour", text: "honor ke 😭", delay: 5500 },
-    { sender: "favour", text: "Me cheat ke 😌🙏🏽 You wey I love with all my heart 🙏🏽", delay: 9000 },
-    { sender: "tomi", text: "you just met me today 😭", delay: 10500 },
-    { sender: "favour", text: "I’ve been monitoring your page since a while ma 🙏🏽", delay: 12000 },
-    { sender: "tomi", text: "fr? 😭😂 since when?", delay: 13500 },
-    { sender: "favour", text: "I just met you today, but our souls have been intertwined since ages ❤️", delay: 15000 },
-    { sender: "favour", text: "Been a very long time… even before you started your fooling era 🙏🏽", delay: 17000 },
-    { sender: "tomi", text: "'my fooling era'😭😂,i need to do better mehn", delay: 9000 },
-    { sender: "tomi", text: "is this how you text ladies?😂", delay: 10500 },
-    { sender: "favour", text: "Never, I don’t do that at all,My DM’s are always dry", delay: 12000 },
-    { sender: "favour", text: "Do better ke, if you stop fooling wetin wan Dey make me smile???", delay: 13500 },
-    { sender: "tomi", text: "i should believe you?😂", delay: 15000 },
-    { sender: "favour", text: "smile at my intellectual tweets😂", delay: 17000 },
-    { sender: "favour", text: "How many of them exists??😔", delay: 10500 },
-    { sender: "favour", text: "Yes baby, I really don’t have anyone seh😭, Should I screenshot my DM?😭😂", delay: 12000 },
-    { sender: "favour", text: "Scrolled through your Media to get a glimpse of you, but I could not find😭", delay: 13500 },
-    { sender: "tomi", text: "close to zero😭", delay: 15000 },
-    { sender: "tomi", text: "dont baby me yet, na so nursing men dey do", delay: 17000 },
-    { sender: "tomi", text: "as how😭,pictures are plenty there nau", delay: 12000 },
-    { sender: "favour", text: "Heyyyy babyyy", delay: 13500 },
-    { sender: "tomi", text: "you don’t listen, do you?😭😂", delay: 15000 }
+   { sender: "favour", text: "DUCHESS OF NURSINGGGG!! 🔥", delay: 1000 },
+  { sender: "favour", text: "It’s an honor to get into your DM ma 🙏🏽", delay: 2500 },
+  { sender: "tomi", text: "hello, cheat 💔", delay: 4000 },
+  { sender: "tomi", text: "honor ke 😭", delay: 5500 },
+
+  { sender: "favour", text: "Me cheat ke 😌🙏🏽 You wey I love with all my heart 🙏🏽", delay: 7000 },
+  { sender: "tomi", text: "you just met me today 😭", delay: 8500 },
+  { sender: "favour", text: "I’ve been monitoring your page since a while ma 🙏🏽", delay: 10000 },
+  { sender: "tomi", text: "fr? 😭😂 since when?", delay: 11500 },
+  { sender: "favour", text: "I just met you today, but our souls have been intertwined since ages ❤️", delay: 13000 },
+  { sender: "favour", text: "Been a very long time… even before you started your fooling era 🙏🏽", delay: 14500 },
+
+  { sender: "tomi", text: "'my fooling era' 😭😂 i need to do better mehn", delay: 16000 },
+  { sender: "tomi", text: "is this how you text ladies? 😂", delay: 17500 },
+  { sender: "favour", text: "Never, I don’t do that at all. My DM’s are always dry 😅", delay: 19000 },
+  { sender: "favour", text: "Do better ke, if you stop fooling wetin wan dey make me smile???", delay: 20500 },
+
+  { sender: "tomi", text: "i should believe you? 😂", delay: 22000 },
+  { sender: "favour", text: "Smile at my intellectual tweets 😂", delay: 23500 },
+  { sender: "favour", text: "How many of them exists?? 😔", delay: 25000 },
+  { sender: "favour", text: "Yes baby, I really don’t have anyone seh 😭 Should I screenshot my DM? 😭😂", delay: 26500 },
+
+  { sender: "favour", text: "Scrolled through your Media to get a glimpse of you, but I could not find 😭", delay: 28000 },
+  { sender: "tomi", text: "close to zero 😭", delay: 29500 },
+  { sender: "tomi", text: "don’t baby me yet, na so nursing men dey do 😏", delay: 31000 },
+  { sender: "tomi", text: "as how 😭 pictures are plenty there nau", delay: 32500 },
+
+  { sender: "favour", text: "Heyyyy babyyy 💕", delay: 34000 },
+  { sender: "tomi", text: "you don’t listen, do you? 😭😂", delay: 35500 },
   ];
 
   useEffect(() => {
