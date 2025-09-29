@@ -101,13 +101,13 @@ export const BirthdayReveal = ({ isLastStage }: BirthdayRevealProps) => {
 
               <p>
                 Thank you for being my joy, my laughter, my peace, and my
-                forever. You’re my Queen 👑, my favorite nurse 🩺, my 6'0
-                stallion with the most beautiful glasses 🤓✨, and the love of
+                forever. You’re my Queen, my favorite nurse, my 6'0
+                stallion with the most beautiful glasses, and the love of
                 my life.
               </p>
 
               <p className="font-bold text-lg sm:text-xl md:text-2xl text-yellow-200">
-                From your 6'3 Tech Nurse who adores you endlessly 💙  
+                From your your babe who adores you endlessly
                 Happy Birthday, my Duchess 🎂✨
               </p>
             </div>
