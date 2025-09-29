@@ -28,7 +28,7 @@ export const BirthdayReveal = ({ isLastStage }: BirthdayRevealProps) => {
 
   const handleKissButton = () => {
     const kissEffect = document.createElement("div");
-    kissEffect.innerHTML = "💋💕✨";
+    kissEffect.innerHTML = "❤️❤️❤️";
     kissEffect.style.cssText = `
       position: fixed;
       top: 50%;
