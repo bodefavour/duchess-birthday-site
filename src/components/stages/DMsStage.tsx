@@ -35,7 +35,7 @@ export const DMsStage = ({ onNext }: DMsStageProps) => {
   { sender: "favour", text: "Do better ke, if you stop fooling wetin wan dey make me smile???", delay: 20500 },
 
   { sender: "tomi", text: "i should believe you? 😂", delay: 22000 },
-  { sender: "favour", text: "Smile at my intellectual tweets 😂", delay: 23500 },
+  { sender: "tomi", text: "Smile at my intellectual tweets 😂", delay: 23500 },
   { sender: "favour", text: "How many of them exists?? 😔", delay: 25000 },
   { sender: "favour", text: "Yes baby, I really don’t have anyone seh 😭 Should I screenshot my DM? 😭😂", delay: 26500 },
 
